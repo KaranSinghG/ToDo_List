@@ -2,5 +2,4 @@
 Created with CodeSandbox
 
 # Current Progress
-![image](https://user-images.githubusercontent.com/37649078/165775478-5fff9c39-5a6b-4b08-a43b-f63f06cacc0c.png)
-
+![image](https://user-images.githubusercontent.com/37649078/170829491-cf57c805-c839-41bb-b126-16a38c1c7992.png)
