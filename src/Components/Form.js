@@ -2,7 +2,6 @@ import React from "react";
 
 function Form({ inputText, todoList, setTodoList, setInputText }) {
   function inputTextHandler(e) {
-    console.log(e.target.value);
     setInputText(e.target.value);
   }
   function addButtonHandler(e) {
@@ -11,7 +10,6 @@ function Form({ inputText, todoList, setTodoList, setInputText }) {
       ...todoList,
       { text: inputText, completed: false, id: Math.random() }
     ]);
-    console.log("Clicked");
   }
 
   return (

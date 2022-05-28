@@ -1,22 +1,14 @@
 import React from "react";
+import Todo from "./Todo";
 
 import "../CSS/list.css";
 
-function List() {
+function List({ todoList }) {
   return (
     <ul className="ul">
-      <li>
-        Item 1 &nbsp;&nbsp;<button type="button">Done</button>
-        <button type="button">Remove</button>
-      </li>
-      <li>
-        Item 2 &nbsp;&nbsp;<button type="button">Done</button>
-        <button type="button">Remove</button>
-      </li>
-      <li>
-        Item 3 &nbsp;&nbsp;<button type="button">Done</button>
-        <button type="button">Remove</button>
-      </li>
+      {todoList.map((todo) => (
+        <Todo text={todo.text} key={todo.id} />
+      ))}
     </ul>
   );
 }
