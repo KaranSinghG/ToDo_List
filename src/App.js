@@ -16,7 +16,7 @@ export default function App() {
         setTodoList={setTodoList}
         setInputText={setInputText}
       />
-      <List todoList={todoList} />
+      <List todoList={todoList} setTodoList={setTodoList} />
     </div>
   );
 }

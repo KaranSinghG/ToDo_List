@@ -10,11 +10,17 @@ function Form({ inputText, todoList, setTodoList, setInputText }) {
       ...todoList,
       { text: inputText, completed: false, id: Math.random() }
     ]);
+    setInputText("");
   }
 
   return (
     <form>
-      <input onChange={inputTextHandler} className="Form" type="text" />
+      <input
+        onChange={inputTextHandler}
+        value={inputText}
+        className="Form"
+        type="text"
+      />
       <button onClick={addButtonHandler} type="button">
         +
       </button>
